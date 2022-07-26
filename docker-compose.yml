@@ -1,0 +1,9 @@
+version: "3.0"
+
+services:
+  app:
+    image: schema-verify:latest
+    build: .
+    volumes:
+      - .:/workspace
+    command: sh -c "sleep infinity"
